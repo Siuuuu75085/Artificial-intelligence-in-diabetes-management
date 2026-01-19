@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ollama Chat</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">Ollama Chatbot</div>
+
+  <div id="chat-box" class="chat-box">
+    <!-- messages here -->
+  </div>
+
+  <div class="input-area">
+    <textarea id="msg" placeholder="Ask anything..."></textarea>
+    <button onclick="send()">➤</button>
+  </div>
+</div>
+
+<!-- LINK JS -->
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
